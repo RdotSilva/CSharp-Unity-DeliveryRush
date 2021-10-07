@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
+    float steerSpeed = 0.1f;
+    float moveSpeed = 0.01f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +17,8 @@ public class Driver : MonoBehaviour
     void Update()
     {
         // Rotate the car
-        transform.Rotate(0, 0, 0.1f);
+        transform.Rotate(0, 0, steerSpeed);
         // Drive in the direction the car is facing
-        transform.Translate(0, 0.01f, 0);
+        transform.Translate(0, moveSpeed, 0);
     }
 }
