@@ -15,5 +15,7 @@ public class Driver : MonoBehaviour
     {
         // Rotate the car
         transform.Rotate(0, 0, 0.1f);
+        // Drive in the direction the car is facing
+        transform.Translate(0, 0.01f, 0);
     }
 }
