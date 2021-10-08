@@ -23,4 +23,6 @@ public class Driver : MonoBehaviour
         // Drive in the direction the car is facing
         transform.Translate(0, moveAmount, 0);
     }
+
+    // TODO: Add collision detection logic
 }
