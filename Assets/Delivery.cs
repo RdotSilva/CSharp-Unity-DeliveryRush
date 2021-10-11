@@ -13,6 +13,11 @@ public class Delivery : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // TODO: Add logic to add user life when power up is collected
-        Debug.Log("Power up detected");
+        
+        // Logic for when a user collects a package
+        if (other.tag == "Package") 
+        {
+            Debug.Log("Package collected!");
+        }
     }
 }
