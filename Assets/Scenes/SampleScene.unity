@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53294747}
   - component: {fileID: 53294746}
+  - component: {fileID: 53294748}
   m_Layer: 0
   m_Name: Tree 3
   m_TagString: Untagged
@@ -289,6 +290,22 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &53294748
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53294745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.54
 --- !u!1 &55787151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1379,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1377,6 +1395,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a516abc25c84b4ea95423086a335d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driverToFollow: {fileID: 1408452462}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1610,6 +1641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702391576}
   - component: {fileID: 702391575}
+  - component: {fileID: 702391577}
   m_Layer: 0
   m_Name: Rocks 1 (1)
   m_TagString: Untagged
@@ -1683,6 +1715,22 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &702391577
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702391574}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.8
 --- !u!1 &753554054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955961095}
   - component: {fileID: 955961094}
+  - component: {fileID: 955961096}
   m_Layer: 0
   m_Name: Tree 4
   m_TagString: Untagged
@@ -2015,6 +2064,22 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &955961096
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955961093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.36
 --- !u!1 &977658008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 977658010}
   - component: {fileID: 977658009}
+  - component: {fileID: 977658011}
   m_Layer: 0
   m_Name: Tree 4
   m_TagString: Untagged
@@ -2098,6 +2164,22 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &977658011
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977658008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.36
 --- !u!1 &1026054968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624850389}
   - component: {fileID: 1624850388}
+  - component: {fileID: 1624850390}
   m_Layer: 0
   m_Name: Tree 1
   m_TagString: Untagged
@@ -3183,6 +3266,22 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1624850390
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624850387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.38
 --- !u!1 &1744267508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,6 +3940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132630740}
   - component: {fileID: 2132630739}
+  - component: {fileID: 2132630741}
   m_Layer: 0
   m_Name: Tree 2
   m_TagString: Untagged
@@ -3914,3 +4014,19 @@ Transform:
   m_Father: {fileID: 1048814467}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2132630741
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132630738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.6
