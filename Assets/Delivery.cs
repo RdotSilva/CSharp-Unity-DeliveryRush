@@ -8,6 +8,14 @@ public class Delivery : MonoBehaviour
     [SerializeField] Color32 noPackageColor = new Color32(1, 1, 1, 1);
     bool hasPackage;
     [SerializeField] float destroyDelay = 0.5f;
+
+    SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     private void OnCollisionEnter2D(Collision2D other) 
     {
         // TODO: Add logic to remove user life on collision
