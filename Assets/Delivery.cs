@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
-    [SerializeField] Color32 hasPackageColor = new Color32(1, 1, 1, 1);
-    [SerializeField] Color32 noPackageColor = new Color32(1, 1, 1, 1);
+    [SerializeField] Color32 hasPackageColor = new Color32(217, 19, 19, 255);
+    [SerializeField] Color32 noPackageColor = new Color32 (216, 224, 3, 255); // TODO: Fix no package color to match starting color
     bool hasPackage;
     [SerializeField] float destroyDelay = 0.5f;
 
