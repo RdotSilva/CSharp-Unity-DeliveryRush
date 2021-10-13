@@ -31,6 +31,9 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("Package collected!");
             hasPackage = true;
+
+            // Change car color on package pickup
+            spriteRenderer.color = hasPackageColor;
             
             // Destroy package on pickup
             Destroy(other.gameObject, destroyDelay);
@@ -40,6 +43,8 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("Package Delivered");
             hasPackage = false;
+            // Change car color on package pickup
+            spriteRenderer.color = noPackageColor;
         }
     }
 }
