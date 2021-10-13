@@ -237,6 +237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!61 &51458266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -303,7 +310,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.33922213, b: 0.9309233, a: 1}
   m_FlipX: 0
@@ -2988,6 +2995,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!61 &1404958772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3054,7 +3068,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.33922213, b: 0.9309233, a: 1}
   m_FlipX: 0
@@ -3214,6 +3228,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!61 &1408452468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3537,6 +3558,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!61 &1670683669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3603,7 +3631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.33922213, b: 0.9309233, a: 1}
   m_FlipX: 0
@@ -3660,6 +3688,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!61 &1725391533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3726,7 +3761,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.33922213, b: 0.9309233, a: 1}
   m_FlipX: 0
@@ -3920,7 +3955,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.33922213, b: 0.9309233, a: 1}
   m_FlipX: 0
@@ -3958,6 +3993,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c0cc835385ea443820a163198ca706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 16843009
+  destroyDelay: 0.5
 --- !u!1 &1851463702
 GameObject:
   m_ObjectHideFlags: 0
