@@ -3265,10 +3265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPackageColor:
     serializedVersion: 2
-    rgba: 4286545791
+    rgba: 4279440345
   noPackageColor:
     serializedVersion: 2
-    rgba: 4278255873
+    rgba: 4278444248
   destroyDelay: 0.5
 --- !u!61 &1408452468
 BoxCollider2D:
