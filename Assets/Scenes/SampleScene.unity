@@ -2193,7 +2193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 00'
+  m_Text: 'Score: 0'
 --- !u!222 &765440660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3502,6 +3502,7 @@ GameObject:
   - component: {fileID: 1408452466}
   - component: {fileID: 1408452468}
   - component: {fileID: 1408452467}
+  - component: {fileID: 1408452469}
   m_Layer: 0
   m_Name: CarDriver
   m_TagString: Untagged
@@ -3657,6 +3658,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4673705, y: 3.250216}
   m_EdgeRadius: 0
+--- !u!114 &1408452469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408452462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0945fbbd3e811d4dad0f6fb311b8db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 765440659}
 --- !u!1 &1442890630
 GameObject:
   m_ObjectHideFlags: 0
