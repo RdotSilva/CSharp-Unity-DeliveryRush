@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Delivery : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class Delivery : MonoBehaviour
     [SerializeField] float destroyDelay = 0.5f;
 
     SpriteRenderer spriteRenderer;
+    Score score;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        score = GetComponent<Score>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -45,6 +48,9 @@ public class Delivery : MonoBehaviour
             hasPackage = false;
             // Change car color on package pickup
             spriteRenderer.color = noPackageColor;
+
+            // Update score on delivery
+            score.IncrementScore();
         }
     }
 }
