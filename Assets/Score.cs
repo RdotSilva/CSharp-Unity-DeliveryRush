@@ -13,4 +13,10 @@ public class Score : MonoBehaviour
         scoreNum = 0;
         scoreText.text = "Score: " + scoreNum;
     }
+
+    public void IncrementScore()
+    {
+        scoreNum++;
+        scoreText.text = "Score: " + scoreNum;
+    }
 }
