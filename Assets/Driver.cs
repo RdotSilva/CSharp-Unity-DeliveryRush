@@ -22,14 +22,10 @@ public class Driver : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Speed up the car when player runs over speed boost
         if (other.tag == "Boost")
         {
-            Debug.Log("Speed Boost Activated");
-        }
-
-         if (other.tag == "Slow")
-        {
-            Debug.Log("Speed Slow Down Activatef");
+            moveSpeed = boostSpeed;
         }
     }
 
