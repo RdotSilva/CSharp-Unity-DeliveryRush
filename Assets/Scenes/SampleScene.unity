@@ -3766,6 +3766,7 @@ GameObject:
   - component: {fileID: 1535114096}
   - component: {fileID: 1535114098}
   - component: {fileID: 1535114097}
+  - component: {fileID: 1535114099}
   m_Layer: 5
   m_Name: TimesUpText
   m_TagString: Untagged
@@ -3825,7 +3826,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 'Time Left: '
 --- !u!222 &1535114098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3834,6 +3835,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535114095}
   m_CullTransparentMesh: 1
+--- !u!114 &1535114099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535114095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f11ec2e9effc8674188b5d758698b336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1563253686
 GameObject:
   m_ObjectHideFlags: 0
