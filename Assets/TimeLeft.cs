@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class TimeLeft : MonoBehaviour
 {
-    Text text;
+    Text timeLeftText;
     public static float timeLeft = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
-        text = GetComponent<Text>();
+        timeLeftText = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -22,6 +22,12 @@ public class TimeLeft : MonoBehaviour
         {
             timeLeft = 0;
         }
-        text.text = "Time left: " + Mathf.Round(timeLeft);
+        DisplayTime(Mathf.Round(timeLeft));
+    }
+
+    // Display the new time left
+    void DisplayTime(float timeToDisplay)
+    {
+        timeLeftText.text = string.Format("Time left: {0}", timeToDisplay);
     }
 }
