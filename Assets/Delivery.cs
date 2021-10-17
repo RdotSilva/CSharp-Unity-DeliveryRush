@@ -13,6 +13,7 @@ public class Delivery : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Score score;
 
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -51,6 +52,8 @@ public class Delivery : MonoBehaviour
 
             // Update score on delivery
             score.IncrementScore();
+
+            TimeLeft.timeLeft += 10f;
         }
     }
 }
