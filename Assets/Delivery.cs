@@ -10,6 +10,8 @@ public class Delivery : MonoBehaviour
     bool hasPackage;
     [SerializeField] float destroyDelay = 0.5f;
 
+    [SerializeField] GameObject package;
+
     SpriteRenderer spriteRenderer;
     Score score;
 
@@ -18,6 +20,7 @@ public class Delivery : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         score = GetComponent<Score>();
+        SpawnPackage();
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -54,6 +57,27 @@ public class Delivery : MonoBehaviour
             score.IncrementScore();
 
             TimeLeft.timeLeft += 10f;
+
+            SpawnPackage();
+        }
+    }
+
+    // Spawn a package randomly within range of the current camera view
+    private void SpawnPackage()
+    {
+        bool packageSpawned = false;
+        while (!packageSpawned)
+        {
+            Vector3 packagePosition = new Vector3(Random.Range(-7f, 7f), Random.Range(-4, 4f), 0f);
+            if ((packagePosition - transform.position).magnitude < 3) 
+            {
+                continue;
+            }
+            else
+            {
+                Instantiate(package, packagePosition, Quaternion.identity);
+                packageSpawned = true;
+            }
         }
     }
 }
