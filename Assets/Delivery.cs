@@ -21,7 +21,7 @@ public class Delivery : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         score = GetComponent<Score>();
-        SpawnPackage();
+        SpawnObject(package);
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
@@ -45,7 +45,7 @@ public class Delivery : MonoBehaviour
             // Destroy package on pickup
             Destroy(other.gameObject, destroyDelay);
 
-            SpawnCustomer();
+            SpawnObject(customer);
         }
 
         if (other.tag == "Customer" && hasPackage) 
@@ -63,44 +63,25 @@ public class Delivery : MonoBehaviour
             // Destroy customer delivery spawn
             Destroy(other.gameObject, destroyDelay);
 
-            SpawnPackage();
+            SpawnObject(package);
         }
     }
 
-    // Spawn a package randomly within range of the current camera view
-    private void SpawnPackage()
+    // Spawn a game object at a random position within range of the current camera view
+    private void SpawnObject(GameObject objectToSpawn)
     {
-        bool packageSpawned = false;
-        while (!packageSpawned)
+        bool objectSpawned = false;
+        while (!objectSpawned)
         {
-            Vector3 packagePosition = new Vector3(Random.Range(-7f, 7f), Random.Range(-4, 4f), 0f);
-            if ((packagePosition - transform.position).magnitude < 3) 
+            Vector3 objectPosition = new Vector3(Random.Range(-7f, 7f), Random.Range(-4, 4f), 0f);
+            if ((objectPosition - transform.position).magnitude < 3) 
             {
                 continue;
             }
             else
             {
-                Instantiate(package, packagePosition, Quaternion.identity);
-                packageSpawned = true;
-            }
-        }
-    }
-
-    // Spawn a customer drop point randomly within range of the current camera view
-    private void SpawnCustomer()
-    {
-        bool customerSpawned = false;
-        while (!customerSpawned)
-        {
-            Vector3 customerPosition = new Vector3(Random.Range(-7f, 7f), Random.Range(-4, 4f), 0f);
-            if ((customerPosition - transform.position).magnitude < 3) 
-            {
-                continue;
-            }
-            else
-            {
-                Instantiate(customer, customerPosition, Quaternion.identity);
-                customerSpawned = true;
+                Instantiate(objectToSpawn, objectPosition, Quaternion.identity);
+                objectSpawned = true;
             }
         }
     }

@@ -616,7 +616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134978581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.2, y: -47.9, z: 0}
+  m_LocalPosition: {x: -34.6, y: -49.5, z: 0}
   m_LocalScale: {x: 5.3592, y: 5.15823, z: 5.3592}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3502,7 +3502,7 @@ MonoBehaviour:
     rgba: 4278444248
   destroyDelay: 0.5
   package: {fileID: 358484461}
-  customer: {fileID: 0}
+  customer: {fileID: 134978581}
 --- !u!61 &1408452468
 BoxCollider2D:
   m_ObjectHideFlags: 0
