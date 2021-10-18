@@ -11,6 +11,7 @@ public class Delivery : MonoBehaviour
     [SerializeField] float destroyDelay = 0.5f;
 
     [SerializeField] GameObject package;
+    [SerializeField] GameObject customer;
 
     SpriteRenderer spriteRenderer;
     Score score;
@@ -44,6 +45,8 @@ public class Delivery : MonoBehaviour
             
             // Destroy package on pickup
             Destroy(other.gameObject, destroyDelay);
+
+            SpawnCustomer();
         }
 
         if (other.tag == "Customer" && hasPackage) 
@@ -57,7 +60,7 @@ public class Delivery : MonoBehaviour
             score.IncrementScore();
 
             TimeLeft.timeLeft += 10f;
-
+            
             SpawnPackage();
         }
     }
@@ -77,6 +80,25 @@ public class Delivery : MonoBehaviour
             {
                 Instantiate(package, packagePosition, Quaternion.identity);
                 packageSpawned = true;
+            }
+        }
+    }
+
+    // Spawn a customer drop point randomly within range of the current camera view
+    private void SpawnCustomer()
+    {
+        bool customerSpawned = false;
+        while (!customerSpawned)
+        {
+            Vector3 customerPosition = new Vector3(Random.Range(-7f, 7f), Random.Range(-4, 4f), 0f);
+            if ((customerPosition - transform.position).magnitude < 3) 
+            {
+                continue;
+            }
+            else
+            {
+                Instantiate(customer, customerPosition, Quaternion.identity);
+                customerSpawned = true;
             }
         }
     }
