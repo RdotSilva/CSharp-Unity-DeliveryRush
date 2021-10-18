@@ -37,7 +37,6 @@ public class Delivery : MonoBehaviour
         // Logic for when a user collects a package
         if (other.tag == "Package" && !hasPackage) 
         {
-            Debug.Log("Package collected!");
             hasPackage = true;
 
             // Change car color on package pickup
@@ -51,8 +50,8 @@ public class Delivery : MonoBehaviour
 
         if (other.tag == "Customer" && hasPackage) 
         {
-            Debug.Log("Package Delivered");
             hasPackage = false;
+
             // Change car color on package pickup
             spriteRenderer.color = noPackageColor;
 
@@ -60,7 +59,10 @@ public class Delivery : MonoBehaviour
             score.IncrementScore();
 
             TimeLeft.timeLeft += 10f;
-            
+
+            // Destroy customer delivery spawn
+            Destroy(other.gameObject, destroyDelay);
+
             SpawnPackage();
         }
     }
